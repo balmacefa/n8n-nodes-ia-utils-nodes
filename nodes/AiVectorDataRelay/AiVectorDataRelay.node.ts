@@ -8,8 +8,8 @@ import {
 
 export class AiVectorDataRelay implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'AI Vector Data Relay',
-		name: 'aiVectorDataRelay',
+		displayName: 'AiRetriever Data Relay',
+		name: 'AiRetrieverRelay',
 		group: ['utility'],
 		version: 1,
 		description: 'Pass data directly to an AI Vector Store without modifications, facilitating integration with vector-based AI systems.',
@@ -19,7 +19,7 @@ export class AiVectorDataRelay implements INodeType {
 			name: 'AI Vector Data Relay',
 			color: '#5A9BD4',
 		},
-		subtitle: 'Simplifies data transfer to AI Vector Stores',
+		subtitle: 'Execute Ai Retrievers using type ai_retriever ',
 		// eslint-disable-next-line n8n-nodes-base/node-class-description-outputs-wrong
 		inputs: [NodeConnectionType.Main],
 		// eslint-disable-next-line n8n-nodes-base/node-class-description-outputs-wrong
