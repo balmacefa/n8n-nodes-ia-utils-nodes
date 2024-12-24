@@ -1,11 +1,10 @@
 // AiVectorDataRelay.node.ts
 
 import {
-	NodeConnectionType,
 	type IExecuteFunctions,
 	type INodeExecutionData,
 	type INodeType,
-	type INodeTypeDescription,
+	type INodeTypeDescription
 } from 'n8n-workflow';
 
 export class AiVectorDataRelay implements INodeType {
@@ -21,11 +20,9 @@ export class AiVectorDataRelay implements INodeType {
 			name: 'AI Vector Data Relay',
 			color: '#5A9BD4',
 		},
-		subtitle: 'Execute Ai Retrievers using type ai_retriever ',
-		// eslint-disable-next-line n8n-nodes-base/node-class-description-outputs-wrong
-		inputs: [NodeConnectionType.Main],
-		// eslint-disable-next-line n8n-nodes-base/node-class-description-outputs-wrong
-		outputs: [NodeConnectionType.AiRetriever],
+		subtitle: 'ai_retriever',
+		inputs: ['main'],
+		outputs: ['main'],
 		properties: [],
 		outputNames: ['AI Vector Store'],
 
