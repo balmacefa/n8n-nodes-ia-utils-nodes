@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-ia-utils-nodes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This node allows to excute ia tools and  Retrivers tool",
   "keywords": [
     "n8n-community-node-package",

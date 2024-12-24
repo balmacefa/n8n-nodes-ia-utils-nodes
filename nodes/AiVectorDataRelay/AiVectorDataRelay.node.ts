@@ -1,8 +1,9 @@
-import type {
-	IExecuteFunctions,
-	INodeExecutionData,
-	INodeType,
-	INodeTypeDescription,
+import {
+	NodeConnectionType,
+	type IExecuteFunctions,
+	type INodeExecutionData,
+	type INodeType,
+	type INodeTypeDescription,
 } from 'n8n-workflow';
 
 export class AiVectorDataRelay implements INodeType {
@@ -19,18 +20,12 @@ export class AiVectorDataRelay implements INodeType {
 			color: '#5A9BD4',
 		},
 		subtitle: 'Simplifies data transfer to AI Vector Stores',
-		inputs: ['main'],
-		outputs: ['main'],
+
+		inputs: [NodeConnectionType.Main],
+		outputs: [NodeConnectionType.AiRetriever],
+		properties: [],
 		outputNames: ['AI Vector Store'],
-		properties: [
-			{
-				displayName: 'Result Limit',
-				name: 'topK',
-				type: 'number',
-				default: 4,
-				description: 'The maximum number of vector-based results to pass through. For example, use 4 to retrieve the top 4 matches.',
-			},
-		],
+
 		codex: {
 			categories: ['AI', 'Data Integration'],
 			subcategories: {
