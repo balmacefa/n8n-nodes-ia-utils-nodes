@@ -1,4 +1,5 @@
 // AiVectorDataRelay.node.ts
+
 import {
 	NodeConnectionType,
 	type IExecuteFunctions,
@@ -10,7 +11,7 @@ import {
 export class AiVectorDataRelay implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'AiRetriever Data Relay',
-		name: 'AiRetrieverRelay',
+		name: 'aiRetrieverRelay',
 		group: ['utility'],
 		version: 1,
 		description: 'Pass data directly to an AI Vector Store without modifications, facilitating integration with vector-based AI systems.',

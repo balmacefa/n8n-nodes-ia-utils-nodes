@@ -39,7 +39,7 @@
     "n8nNodesApiVersion": 1,
     "credentials": [],
     "nodes": [
-      "dist/nodes/AiVectorDataRelay/AiVectorDataRelay.node.js"
+      "dist/nodes/AiRetrieverRelay/AiRetrieverRelay.node.js"
     ]
   },
   "devDependencies": {
