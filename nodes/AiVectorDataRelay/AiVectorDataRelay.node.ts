@@ -20,8 +20,9 @@ export class AiVectorDataRelay implements INodeType {
 			color: '#5A9BD4',
 		},
 		subtitle: 'Simplifies data transfer to AI Vector Stores',
-
+		// eslint-disable-next-line n8n-nodes-base/node-class-description-outputs-wrong
 		inputs: [NodeConnectionType.Main],
+		// eslint-disable-next-line n8n-nodes-base/node-class-description-outputs-wrong
 		outputs: [NodeConnectionType.AiRetriever],
 		properties: [],
 		outputNames: ['AI Vector Store'],
